@@ -26,7 +26,7 @@ os.system("clear")
 time.sleep(1)
 
 def ppx():
-  data = random._urandom(int(811, 600))
+  data = random._urandom(811, 600)
   while True:
   	try:
   		sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
